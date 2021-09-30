@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung</title>
+    <link rel="icon" href="./24x24.png" type="image/icon type">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/036c0f4338.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/facebook.css">
+    <link rel="stylesheet" href="./css/youtube.css">
+    <link rel="stylesheet" href="./css/zalo.css">
+    <link rel="stylesheet" href="./css/phone.css">
+</head>
+<body>
+    <div class="avatar">
+        <img src="./avt.png">
+    </div>
+    <div class="profile">
+        <a class="trung facebook" href="http://fb.com/puti78">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Facebook
+        </a>
+        <a class="trung youtube" href="https://www.youtube.com/channel/UC4KPDEympav44fhnR30oypA">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Youtube
+        </a>
+        <a class="trung zalo" href="https://zalo.me/0339535492">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Zalo
+        </a>
+        <input type="text" value="0396540987" id="myInput">
+        <a class="trung phone" href="tel:0396540987">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Phone
+            <i onclick="myFunction()" class="far fa-copy coppy" title="Coppy SĐT"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+          var copyText = document.getElementById("myInput");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999)
+          document.execCommand("copy");
+          alert("Đã sao chép SĐT: " + copyText.value + "\nI Love You");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --font-chu-list : rgb(255, 255, 255);
+    --vien-1:#003941;
+    --vien-2:#00eeff;
+    --size-vien: 2px;
+    --vien-ytb-1 : rgb(117, 0, 0) ;
+    --vien-ytb-2 : rgb(255, 0, 0) ;
+    --vien-zalo-1 : blue;
+    --vien-zalo-2 : blue;
+    --vien-phone-1 : rgba(115, 255, 0, 0.651);
+    --vien-phone-2 : rgb(0, 255, 64);
+    --img : 50%;
+    --img-50 : calc(var(--img)/2);
+}
+html
+{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+body
+{
+    background-color: #333;
+}
+.avatar img
+{
+    left: 50%;
+    top: 50%;
+    margin-top: calc(var(--img) - var(--img) - var(--img-50) );
+    margin-left:  calc(var(--img) - var(--img) - var(--img-50) );
+    position: absolute;
+    width: var(--img);
+    border-radius: 50%;
+    position: fixed;
+}
+.profile .trung
+{
+    background-color: rgba(51, 51, 51, 0.514);
+    position: relative;
+    padding: 60px 60px;
+    margin: 60px;
+    display: list-item;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.637);
+    color: var(--font-chu-list);
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+#myInput
+{
+    display: none;
+}
+.coppy
+{
+    position: absolute;
+
+    color: var(--vien-phone-2);
+
+}
+/* -------------------------------------- */
+
+@keyframes trung1
+{
+    0% 
+    {
+        transform: translateX(-100%);
+    }
+    100% 
+    {
+        transform: translateX(100%);
+    }
+}
+@keyframes trung2
+{
+    0% 
+    {
+        transform: translateY(-100%);
+    }
+    100% 
+    {
+        transform: translateY(100%);
+    }
+}
+@keyframes trung3
+{
+    0% 
+    {
+        transform: translateX(100%);
+    }
+    100% 
+    {
+        transform: translateX(-100%);
+    }
+}
+@keyframes trung4
+{
+    0% 
+    {
+        transform: translateY(100%);
+    }
+    100% 
+    {
+        transform: translateY(-100%);
+    }
+}

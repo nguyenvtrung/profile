@@ -1,0 +1,47 @@
+
+.profile .youtube span:nth-child(1)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--size-vien);
+    background: linear-gradient(to right , var(--vien-ytb-1) , var(--vien-ytb-2));
+    animation: trung1 2s linear infinite;
+    animation-delay: 1s;
+
+}
+
+.profile .youtube span:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--size-vien);
+    height: 100%;
+    background: linear-gradient(to bottom , var(--vien-ytb-1) , var(--vien-ytb-2));
+    animation: trung2 2s linear infinite;
+}
+.profile .youtube span:nth-child(3)
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--size-vien);
+    background: linear-gradient(to left , var(--vien-ytb-1) , var(--vien-ytb-2));
+    animation: trung3 2s linear infinite;
+    animation-delay: 1s;
+
+}
+.profile .youtube span:nth-child(4)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--size-vien);
+    height: 100%;
+    background: linear-gradient(to top , var(--vien-ytb-1) , var(--vien-ytb-2));
+    animation: trung4 2s linear infinite;
+
+}
