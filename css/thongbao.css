@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+trung
+{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 100vw;
+    height: 100vh;
+}
+.trungthongbao.close
+{
+    display: none;
+}
+.thongbao
+{
+    position: absolute;
+    inset: 50% 0 0 50%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%,-50%);
+    width: 80vw;
+    height: 34vh;
+    border: 5px dotted red;
+    border-radius: 15px 60px 15px 60px;
+    overflow: hidden;
+    animation: border--thongbao 5s linear infinite;
+}
+@keyframes border--thongbao {
+    0%
+    {
+        border: 5px dotted red;
+    }
+    25%
+    {
+        border: 5px dotted rgb(0, 255, 221);
+    }
+    50%
+    {
+        border: 5px dotted rgb(51, 255, 0);
+    }
+}
+
+
+.thongbao .title
+{
+    text-align: center;
+    line-height: 34vh;
+}
+.thongbao .title .xinchao
+{
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 10vw;
+}
+
+.date__thongBao
+{
+
+}
+
+
+.thongbao .bottom
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 2.5px 0;
+    border-top: 2px dotted black;
+}
+.thongbao .bottom p
+{
+    --width--shadow : 5px;
+    --width--text : 222px;
+    margin-left: 48px;
+    white-space: nowrap;
+    box-shadow: 7px 0 0 black;
+    overflow: hidden;
+    animation: textbottom 5s 1s steps(24) infinite;
+}
+@keyframes textbottom {
+    0%,100%
+    {
+        color: red;
+        box-shadow: var(--width--shadow) 0 0 black;
+        width: 1px;
+    }
+    50%,60%,80%
+    {
+        color: green;
+        box-shadow: var(--width--shadow) 0 0 rgb(0, 0, 0);
+        width: var(--width--text);
+    }
+    85%
+    {
+        color: blue;
+        box-shadow: var(--width--shadow) 0 0 black;
+        width: 1px;
+    }
+}
