@@ -1,62 +1,137 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trung</title>
-    <link rel="icon" href="./24x24.png" type="image/icon type">
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="https://kit.fontawesome.com/036c0f4338.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/facebook.css">
-    <link rel="stylesheet" href="./css/youtube.css">
-    <link rel="stylesheet" href="./css/zalo.css">
-    <link rel="stylesheet" href="./css/phone.css">
-</head>
-<body>
+    <link rel="icon" href="./24x24.png" type="image/icon type" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/036c0f4338.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/facebook.css" />
+    <link rel="stylesheet" href="./css/youtube.css" />
+    <link rel="stylesheet" href="./css/zalo.css" />
+    <link rel="stylesheet" href="./css/phone.css" />
+    <link rel="stylesheet" href="./css/thongbao.css" />
+  </head>
+  <body>
     <div class="avatar">
-        <img src="./avt.png">
+      <img src="./avt.png" />
     </div>
     <div class="profile">
-        <a class="trung facebook" href="http://fb.com/puti78">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Facebook
-        </a>
-        <a class="trung youtube" href="https://www.youtube.com/channel/UC4KPDEympav44fhnR30oypA">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Youtube
-        </a>
-        <a class="trung zalo" href="https://zalo.me/0339535492">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Zalo
-        </a>
-<!--         <input type="text" value="0396540987" id="myInput">
-        <a class="trung phone" href="tel:0396540987">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Phone
-            <i onclick="myFunction()" class="far fa-copy coppy" title="Coppy SĐT"></i>
-        </a> -->
+      <a class="trung facebook" href="http://fb.com/puti78">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Facebook
+      </a>
+      <a
+        class="trung youtube"
+        href="https://www.youtube.com/channel/UC4KPDEympav44fhnR30oypA"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Youtube
+      </a>
+      <a class="trung zalo" href="https://zalo.me/0339535492">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Zalo
+      </a>
+      <input type="text" value="0396540987" id="myInput" />
+      <a class="trung phone" href="tel:0396540987">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Phone
+        <i
+          onclick="myFunction()"
+          class="far fa-copy coppy"
+          title="Coppy SĐT"
+        ></i>
+      </a>
     </div>
+
+    <!-- Tạo cái thông báo khi vào :3 -->
+    <trung class="trungthongbao">
+      <div class="thongbao">
+        <div class="title">
+          <p class="xinchao">Hí xin chào</p>
+          <!-- <div class="date">
+            <marquee>
+              <p id="date__thongBao">
+                <script>
+                  n = new Date();
+                  y = n.getFullYear();
+                  m = n.getMonth() + 1;
+                  d = n.getDate();
+                  t = n.getDay() + 1;
+                  console.log(t);
+                  if (d == 7 && m == 8) {
+                    document.getElementById("date__thongBao").innerHTML =
+                      "Ố la ố la hôm nay sinh nhật Admin hí hí ";
+                  } else if (t == 2) {
+                    document.getElementById("date__thongBaoo").innerHTML =
+                      "Hôm nay là thứ " +
+                      t +
+                      " chúc bạn có một ngày đầu tuần thành công , vui vẻ nhé và gặp nhiều may mắn!!!";
+                  } else if (t == 3) {
+                    document.getElementById("date__thongBao").innerHTML =
+                      "Haizzz cuối cùng cũng hết thứ " + (t - 1);
+                  } else if (t == 4 || t == 5 || t == 6) {
+                    document.getElementById("date__thongBao").innerHTML =
+                      "Cố cày còn " + (7 - t) + " ngày nữa là được nghỉ rồi";
+                  } else if (t == 7 || t == 8) {
+                    if (t == 8) {
+                      document.getElementById("date__thongBao").innerHTML =
+                        "Uây nhanh thế nay đã chủ nhật rồi, chúc bạn có một cuối tuần vui vẻ!";
+                    } else {
+                      document.getElementById("date__thongBao").innerHTML =
+                        "Ố là la thứ " +
+                        t +
+                        " rồi chuẩn bị mai quẩy thoiii!!! ";
+                    }
+                  }
+                </script>
+              </p>
+            </marquee>
+          </div> -->
+        </div>
+        <div class="content"></div>
+        <div class="bottom">
+          <p>Hello, my name Trung !!!</p>
+          <script>
+            var string = "Hello, my name Trung !!!";
+            console.log(string.length);
+          </script>
+        </div>
+      </div>
+    </trung>
+
     <script>
-        function myFunction() {
-          var copyText = document.getElementById("myInput");
-          copyText.select();
-          copyText.setSelectionRange(0, 99999)
-          document.execCommand("copy");
-          alert("Đã sao chép SĐT: " + copyText.value + "\nI Love You");
-        }
+      const btnclose = document.querySelector('.trungthongbao');
+    
+      function myFunction() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        alert("Đã sao chép SĐT: " + copyText.value + "\nI Love You");
+
+    }
+    function close() {
+        btnclose.classList.add('close'); 
+    }
+    btnclose.addEventListener('click', close);
     </script>
-</body>
+  </body>
 </html>
