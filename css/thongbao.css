@@ -60,11 +60,13 @@ trung
 .thongbao .bottom
 {
     position: absolute;
+    font-family: 'Cookie', cursive;
     bottom: 0;
     right: 0;
     width: 100%;
     padding: 2.5px 0;
     border-top: 2px dotted black;
+    font-size: 20px;
 }
 .thongbao .bottom p
 {
