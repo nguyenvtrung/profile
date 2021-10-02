@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
 }
 
 :root
@@ -23,6 +24,14 @@
     --img : 50%;
     --img-50 : calc(var(--img)/2);
 }
+::-webkit-scrollbar
+{
+    display: none;
+}
+::selection
+{
+    background-color: rgb(255, 92, 119);
+}
 html
 {
     scroll-behavior: smooth;
@@ -32,6 +41,11 @@ html
 body
 {
     background-color: #333;
+}
+html,
+body {
+  cursor: url("../../img/rocket.png"), auto;
+  scroll-behavior: smooth;
 }
 .avatar img
 {
